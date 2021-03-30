@@ -11,6 +11,7 @@ public class WalletFunctionality {
         if(preferredCurrency == "Rupees") {
             return dollar.getCurrencyValue() * 74.85 + rupees.getCurrencyValue();
         }
-        return 0;
+        else
+            return dollar.getCurrencyValue() + rupees.getCurrencyValue()/74.85;
     }
 }
